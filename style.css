@@ -30,7 +30,7 @@ body {
 #index-pic {
     max-width: 400px;
     border-radius: 30px;
-
+    margin-bottom: 50px;
 }
 
 .imgflex {
@@ -63,11 +63,18 @@ body {
     margin: 50px 10px;
 }
 
-#bot-tag {
+/* #bot-tag {
     position: absolute;
     bottom: 0;
     right: 420px;
     margin-top: 15px;
+} */
+
+#bot-tag {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right:30px ;
 }
 
 footer {
