@@ -116,21 +116,19 @@ footer {
         flex-flow: row wrap-reverse;
         align-items: flex-start;
     }
-
+/* 
     .textflex {
 
     }
 
     #disclaimer {
     
-    }
+    } */
 
     #sum-intro {
         order: 1;
         flex: 1 1 100%;
-
     }
-
     #bot-tag {
         font-size: small;
         position: static;
@@ -145,9 +143,9 @@ footer {
         margin-bottom: 0px;
     }
 
-    #pic-wrap {
+    /* #pic-wrap {
         order: ;
-    }
+    } */
 
     .nav {
         display: flex;
