@@ -40,24 +40,26 @@ body {
 
 #index-pic {
     max-width: 400px;
+    max-height: max-content;
     border-radius: 30px;
     margin-bottom: 50px;
 }
 
-.imgflex {
+.container {
     border: solid rgb(62, 119, 62) 20px;
     display: flex;
     margin:2% 10%;
     padding: 15px;
     background-color: black;
     color: white;
+    text-align: center;
     /* position: relative; */
     /* height: 500px; */
 }
 
-.textflex {
+/* .textflex {
     text-align: center;;
-}
+} */
 
 #sum-intro {
     font-family: serif;
@@ -94,7 +96,7 @@ footer {
 }
 
 #disclaimer {
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     margin: 0px 20px;
     color: rgba(255, 0, 0, 0.486);
@@ -102,32 +104,56 @@ footer {
 }
 
 @media(max-width: 900px) {
-    .imgflex .textflex {
+    /* .container .textflex {
     zoom: 0.8;
     -moz-transform: scale(0.8);
-    transform: none;
-    display: flex;
-    flex-direction: column;
+    transform: none; */
+    /* display: flex;
+    flex-flow: column wrap; */
 
+    .container {
+        display: flex;
+        flex-flow: row wrap-reverse;
+        align-items: flex-start;
+    }
+
+    .textflex {
+
+    }
+
+    #disclaimer {
     
+    }
+
+    #sum-intro {
+        order: 1;
+        flex: 1 1 100%;
+
     }
 
     #bot-tag {
         font-size: small;
+        position: static;
+        margin-top: 0px;
     }
 
     #index-pic {
         max-width: 100px;
-        max-height: 100px;
+        max-height: max-content;
         border-radius: 100%;
+        align-self: auto;
+        margin-bottom: 0px;
     }
 
-    /* .nav {
+    #pic-wrap {
+        order: ;
+    }
+
+    .nav {
         display: flex;
         flex-direction: column;
         padding: 0;
         width: 120px;
-        height: ;
         position: fixed;
         margin-right: 100px;
         height: 100%;
@@ -137,6 +163,5 @@ footer {
 
     body {
         margin-left: 200px;
-    } */
-
+    }
 }
